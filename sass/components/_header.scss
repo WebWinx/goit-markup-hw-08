@@ -1,0 +1,10 @@
+.header {
+	border-bottom: 1px solid $section-border-color;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+}
+.header-item:last-child {
+	margin: 0;
+}
