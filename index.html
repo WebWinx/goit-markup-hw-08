@@ -60,6 +60,51 @@
                             </svg> +38 096 111 11 11</a>
                     </li>
                 </ul>
+					 <div class="container mobile-bar">
+						<a href="./index.html" class="logo"><span class="logo__web">Web</span><span
+								  class="logo__studio">Studio</span></a>
+						<button type="button" class="mobile-bar__button is-open" data-menu-button>
+							 <svg width="40" height="40" aria-label="мобильное меню">
+								  <use class="mobile-header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+							 </svg>
+						</button>
+						<div class="mobile-bar__menu" data-menu>
+							 <button type="button" class="mobile-bar__button is-open" data-menu-button>
+								  <svg width="40" height="40" aria-label="мобильное меню" data-menu-close>
+										<use class="mobile-bar__icon-cross" href="./images/icons.svg#icon-close_40px"></use>
+								  </svg></button>
+							 <nav>
+								  <ul class="site-nav">
+										<li class="site-nav__item"><a href="./index.html" class="site-nav__link--current">Студия</a></li>
+										<li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+										<li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+								  </ul>
+							 </nav>
+							 <ul class="contacts">
+								  <li class="contacts__item">
+										<a href="mailto:info@devstudio.com" class="contacts__link contacts__item-email">
+											 <svg class="contacts__icon" width="16" height="12">
+												  <use href="./images/icons.svg#icon-envelope-hover"></use>
+											 </svg>
+											 info@devstudio.com</a>
+								  </li>
+								  <li class="contacts__item">
+										<a href="tel:+380961111111" class="contacts__link contacts__item-tel">
+											 <svg class="contacts__icon" width="10" height="16">
+												  <use href="./images/icons.svg#icon-smartphone"></use>
+											 </svg>
+											 +38 096 111 11 11</a>
+								  </li>
+							 </ul>
+							 <ul class="social-mobile">
+								  <li class="social-mobile_item social-mobile_item-li"><a href="https://instagram.com/"
+											 class="social-mobile_link">Instagram</a></li>
+								  <li class="social-mobile_item"><a href="https://twitter.com/" class="social-mobile_link">Twitter</a></li>
+								  <li class="social-mobile_item"><a href="https://www.facebook.com/" class="social-mobile_link">Facebook</a></li>
+								  <li class="social-mobile_item"><a href="https://www.linkedin.com/" class="social-mobile_link">LinkedIn</a></li>
+							 </ul>
+						</div>
+		
             </div>
         </header>
         <main>
@@ -151,16 +196,18 @@
                     </ul>
                 </div>
             </section>
-            <section class="section activity">
+            <section class="section activity--none">
                 <div class="container">
                     <h2 class="section__title activity__title">Чем мы занимаемся</h2>
                     <ul class="activity-list">
                         <li class="activity-list__item">
                             <div class="activity-list__thumb">
-                                <img
-                                    src="./images/imge.jpg"
-                                    alt="дизайн"
-                                    width="370"/>
+										<picture>
+											<source srcset="./images/des/desdes.jpg 1x, ./images/des/desdes@2x.jpg 2x" type="image/jpeg" />
+											<source srcset="./images/des/desdes@2x.webp" type="image/webp" />
+											<img src="./images/des/desdes.jpg" alt="человек печатает на клавиатуре" 
+											width="370"/>
+									  </picture>
                                 <p class="activity-list__animation">
                                     Десктопные приложения
                                 </p>
@@ -168,10 +215,12 @@
                         </li>
                         <li class="activity-list__item">
                             <div class="activity-list__thumb">
-                                <img
-                                    src="./images/imge(1).jpg"
-                                    alt="системность"
-                                    width="370"/>
+										<picture>
+											<source srcset="./images/des/desmob.jpg 1x, ./images/des/desmob@2x.jpg 2x" type="image/jpeg" />
+											<source srcset="./images/des/desmob@2x.webp" type="image/webp" />
+											<img src="./images/des/desmob.jpg" alt="человек смотрит на телефон" 
+											width="370" />
+									  </picture>
                                 <p class="activity-list__animation">
                                     Мобильные приложения
                                 </p>
@@ -179,11 +228,12 @@
                         </li>
                         <li class="activity-list__item">
                             <div class="activity-list__thumb">
-                                <img
-                                    src="./images/imge(2).jpg"
-                                    alt="адаптация"
-                                    width="370"/>
-                                <p class="activity-list__animation">
+										<picture>
+											<source srcset="./images/des/desdes.jpg 1x, ./images/des/desdes@2x.jpg 2x" type="image/jpeg" />
+											<source srcset="./images/des/desdes@2x.webp" type="image/webp" />
+											<img src="./images/des/desdes.jpg" alt="человек держит в руках планшет" width="370" />
+									  </picture>
+									      <p class="activity-list__animation"></p>
                                     Дизайнерские решения
                                 </p>
                             </div>
@@ -196,10 +246,15 @@
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-list__item">
-                            <img
-                                src="./images/des/desID.jpg"
-                                alt="Игорь Демьяненко"
-                                width="270"/>
+									<picture>
+										<source media="(min-width: 480px)" srcset="./images/mob/mobID.jpg 1x, ./images/mob/mobID@2x.jpg 2x" type="image/jpeg" />
+										<source media="(min-width: 768px)" srcset="./images/tab/tabID.jpg 1x, ./images/tab/tabID@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source media="(min-width: 1200px)" srcset="./images/des/desID.jpg 1x, ./images/des/desID@2x.jpg 2x"
+												  type="image/jpeg" />
+										<source srcset="./images/mob/mobID@2x.webp" type="image/webp" />
+										<img src="./images/mob/mobID.jpg" alt="Игорь Демьяненко"/>
+								  </picture>
                             <div class="teammate">
                                 <h3 class="teammate__name">
                                     Игорь Демьяненко
@@ -265,10 +320,15 @@
                         </li>
 
                         <li class="team-list__item">
-                            <img
-                                src="./images/des/desOR.jpg"
-                                alt="Ольга Репина"
-                                width="270"/>
+									<picture>
+										<source media="(min-width: 480px)" srcset="./images/mob/mobOR.jpg 1x, ./images/mob/mobOR@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source media="(min-width: 768px)" srcset="./images/tab/tabOR.jpg 1x, ./images/tab/tabOR@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source media="(min-width: 1200px)" srcset="./images/des/desOR.jpg 1x, ./images/des/desOR@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source srcset="./images/mob/mobOR@2x.webp" type="image/webp" />
+										<img src="./images/mob/mobOR.jpg" alt="Ольга Репина"/>
                             <div class="teammate">
                                 <h3 class="teammate__name">Ольга Репина</h3>
                                 <p class="teammate__position">
@@ -335,10 +395,15 @@
                         </li>
 
                         <li class="team-list__item">
-                            <img
-                                src="./images/des/desNT.jpg"
-                                alt="Николай Тарасов"
-                                width="270"/>
+									<picture>
+										<source media="(min-width: 480px)" srcset="./images/mob/mobNT.jpg 1x, ./images/mob/mobNT@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source media="(min-width: 768px)" srcset="./images/tab/tabNT.jpg 1x, ./images/tab/tabNT@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source media="(min-width: 1200px)" srcset="./images/des/desNT.jpg 1x, ./images/des/desNT@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source srcset="./images/mob/mobNT@2x.webp" type="image/webp" />
+										<img src="./images/mob/mobNT.jpg" alt="Николай Тарасов" />
                             <div class="teammate">
                                 <h3 class="teammate__name">
                                     Николай Тарасов
@@ -405,10 +470,16 @@
                             </div>
                         </li>
                         <li class="team-list__item">
-                            <img
-                                src="./images/des/desME.jpg"
-                                alt="Михаил Ермаков"
-                                width="270"/>
+									<picture>
+										<source media="(min-width: 480px)" srcset="./images/mob/mobME.jpg 1x, ./images/mob/mobME@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source media="(min-width: 768px)" srcset="./images/tab/tabME.jpg 1x, ./images/tab/tabME@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source media="(min-width: 1200px)" srcset="./images/des/desME.jpg 1x, ./images/des/desME@2x.jpg 2x"
+											 type="image/jpeg" />
+										<source srcset="./images/mob/mobME@2x.webp" type="image/webp" />
+										<img src="./images/mob/mobME.jpg" alt="Михаил Ермаков" />
+								  </picture>
                             <div class="teammate">
                                 <h3 class="teammate__name">Михаил Ермаков</h3>
                                 <p class="teammate__position">
@@ -639,7 +710,6 @@
                         <input
                             type="email"
                             name="email"
-                            id="email"
                             placeholder="E-mail"
                             class="subscribe__input"/>
                         <button type="submit" class="primary-button primary-button--flex">
@@ -706,9 +776,7 @@
                     </div>
 						</div>
                     <div class="textarea-group">
-							<div class="label">
-                        <label class="label__item">Комментарий</label>
-							</div>
+                        <label class="label">Комментарий</label>
                      <textarea
                             name="comment"
                             placeholder="Введите текст"

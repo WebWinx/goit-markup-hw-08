@@ -1,6 +1,19 @@
+.footer-section__subscribe {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin: 0 auto;
+	 }
+  }
 .subscribe {
 	display: flex;
-}
+	align-items: center;
+	@media screen and (max-width: 767px) {
+	  flex-direction: column;
+	  text-align: center;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	  flex-direction: column;
+	}
+ }
 .subscribe__input {
 	margin-right: 12px;
 	padding: 15px 16px;
@@ -10,10 +23,23 @@
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	background-color: transparent;
-	& input::placeholder {
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		margin-bottom: 20px;
+	 }
+	 @media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 450px;
+		margin-bottom: 20px;
+	 }
+	 @media screen and (min-width: 1200px) {
+		width: 358px;
+		margin-right: 12px;
+	 }
+  }
+  .subscribe__input input::placeholder {
 		font-size: 16px;
 		line-height: 1.25;
 		letter-spacing: 0.03em;
 		color: rgba(255, 255, 255, 0.6);
 	}
-}
+

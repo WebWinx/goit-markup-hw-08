@@ -1,5 +1,5 @@
 .activity-list {
-	//display: flex;
+	display: flex;
 	align-items: center;
 	padding-top: 0;
 }
@@ -19,11 +19,21 @@
 		display: none;
 	 }
 }
+@media screen and (min-width: 768px) {
+	.our-work {
+	  display: none;
+	}
+ }
 @media screen and (min-width: 1200px) {
 	.activity-list {
 	  display: flex;
 	}
  }
+ @media screen and (min-width: 1200px) {
+	.activity--none {
+	  padding-bottom: 94px;
+	}
+}
 .activity-list__item:not(:last-child) {
 	margin-right: 30px;
 }

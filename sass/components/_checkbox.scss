@@ -7,6 +7,18 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: $color-text-description;
+	@media screen and (max-width: 767px) {
+		font-size: 12px;
+		line-height: 1.16;
+	 }
+	 @media screen and (min-width: 768px) {
+		font-size: 12px;
+		line-height: 1.16;
+	 }
+	 @media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	 }
 }
 .checkbox__icon {
 	display: flex;

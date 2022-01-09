@@ -4,14 +4,64 @@
 	font-size: 26px;
 	line-height: 1.2;
 }
-
-.logo__studio {
-	color: $primary-text-color;
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
-.logo__web {
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  .logo {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+	.logo {
+	  font-size: 26px;
+	  line-height: 1.2;
+	}
+	.logo {
+	  padding-top: 24px;
+	  padding-bottom: 24px;
+	}
+ }
+ .logo__web {
 	color: $accent-color;
-}
-
-.logo__studio--secondary {
+ }
+ .logo__studio {
+	color: $primary-text-color;
+ }
+ .logo__studio--secondary {
 	color: $primary-bg-color;
 }
+ @media screen and (max-width: 767px) {
+	.logo {
+	  display: flex;
+	  justify-content: center;
+	  margin-bottom: 20px;
+	}
+ }
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+	.logo{
+	  margin-bottom: 20px;
+	}
+ }
+ @media screen and (min-width: 1200px) {
+	.logo {
+	  margin-bottom: 20px;
+	}
+ }
+
+
+
