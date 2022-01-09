@@ -19,6 +19,12 @@
 	justify-content: center;
 	align-items: center;
 }
+.primary-button__icon{
+	margin-left: 10px;
+	fill: $text-color-on-dark;
+	width: 24px;
+	height: 24px;
+}
 .secondary-button {
 	display: inline-block;
 	color: $primary-text-color;
