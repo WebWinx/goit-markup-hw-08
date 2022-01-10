@@ -14,14 +14,10 @@
 	border-radius: 4px;
 	transition: fill $animation-duration $animation-timing-function;
 }
-.primary-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 .primary-button--flex {
 display: flex;
 align-items: center;
+justify-content: center;
 @media screen and (max-width: 767px) {
   width: 200px;
   height: 50px;

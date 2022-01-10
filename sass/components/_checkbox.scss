@@ -23,7 +23,7 @@
 .checkbox__icon {
 	display: flex;
 	margin-right: 8px;
-	width: 16px;
+	min-width: 16px;
 	height: 15px;
 	border: 2px solid $primary-text-color;
 	border-radius: 2px;

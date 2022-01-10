@@ -3,10 +3,10 @@
 	background-color: $bg-color-section;
 }
 .hero--overlay {
+	padding: 118px 0px;
    margin: 0 auto;
 	max-width: 1600px;
 	min-height: 400px;;
-	padding: 200px 0px;
 	background-image: no repeat;
 	background-image: linear-gradient(
 			  to right rgba(47, 48, 58, 0.4),
@@ -67,7 +67,6 @@
 	  }
 }
 .hero__title {
-	width: 696px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.4;
@@ -79,7 +78,6 @@
 	margin-right: auto;
 	text-align: center;
 	max-width: 1600px;
-	min-height: 400px;
 	@media screen and (max-width: 767px) {
 		font-size: 26px;
 		line-height: 1.61;

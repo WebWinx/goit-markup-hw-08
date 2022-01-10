@@ -1,7 +1,15 @@
 .contacts {
-	display: flex;
 	margin-left: auto;
-	align-items: center;
+
+	@media screen and (max-width: 767px) {
+		margin-top: auto;
+		margin-bottom: 64px;
+		flex-direction: column;
+	  }
+	  @media screen and (mix-width: 1200px) {
+	  align-items:center;
+	  display: flex;
+	}
 }
 .contacts__item:not(:last-child) {
 	margin-right: 50px;

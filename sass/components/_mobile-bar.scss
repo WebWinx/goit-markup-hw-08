@@ -34,15 +34,15 @@
 	  display: none;
 	}
 	.mobile-bar__menu {
+		display: flex;
 	  position: fixed;
-	  display: flex;
 	  flex-direction: column;
-	  width: 100%;
-	  height: 100%;
+	  width: 100vw;
+	  height: 100vh;
 	  top: 0;
 	  left: 0;
 	  z-index: 1;
-	  margin-left: auto;
+	  padding: 44px 40px;
 	  background-color: $text-color-on-dark;
 	  transform: translateX(100%);
 	  transition: transform $animation-duration $animation-timing-function;
@@ -52,10 +52,9 @@
 	  }
 	}
 	.mobile-bar__button {
-	  display: flex;
-	  flex-direction: row-reverse;
-	  margin-top: 10px;
-	  margin-right: 15px;
+		position: absolute;
+		top: 10px;
+		right: 15px;
 	  padding: 0;
 	  border: 0;
 	  background-color: transparent;
@@ -65,24 +64,24 @@
 		 fill: $accent-color;
 	  }
 	}
-	.social-mobile {
+	.social-text {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		padding: 0px 40px 48px 40px;
+		flex: wrap;
 	 }
-	 .social-mobile_item:not(:first-child) {
+	 .social-text__item:not(:first-child) {
 		padding-right: 10px;
 		padding-left: 10px;
-		border-left: 1px solid rgba(33, 33, 33, 0.2);
+		border-right: 1px solid rgba(33, 33, 33, 0.2);
 	 }
-	 .social-mobile_item-li {
+	 .social-text__item{
 		padding-right: 10px;
 	 }
-	 .social-mobile_link {
+	 .social-text__links {
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 1.22;
 		letter-spacing: 0.02em;
-		color: #2196f3;
+		color: $accent-color;
 	 }
