@@ -10,6 +10,7 @@
 }
 
 .site-nav__link {
+	@media screen and (min-width: 1200px){
 	display: block;
 	color: $title-text-color;
 	font-family: inherit;
@@ -17,7 +18,7 @@
 	font-size: 14px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-   transition: color $animation-duration $animation-timing-function;
+   transition: color $animation-duration $animation-timing-function;}
 	&:hover,
 	&:focus {
 	color: $accent-color;
@@ -27,17 +28,52 @@
 	letter-spacing: 0.02em;
    }
 }
-@media screen and (min-width: 1200px) {
-	.site-nav {
+.site-nav__link {
+	@media screen and (max-width: 767px){
+		color: $title-text-color;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 40px;
+	letter-spacing: 0.02em;
+   transition: color $animation-duration $animation-timing-function;}
+	&:hover,
+	&:focus {
+	color: $accent-color;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 46px;
+	letter-spacing: 0.02em;
+	}
+}
+.site-nav__link:not(:last-child) {
+	@media screen and (max-width: 767px){
+	margin-bottom: 30px;
+ }
+}
+site-nav__link--current {
+	@media screen and (max-width: 767px){
+		color: $accent-color;
+	}
+
+}
+.site-nav {
+@media screen and (min-width: 1200px) { 
 	  display: flex;
 	}
-	.site-nav__item {
+}
+.site-nav__item-link:hover, .site-nav__item-link:focus, .site-nav__item-link:active {
+	@media screen and (max-width: 767px){
+	color: $accent-color;
+ }
+}
+.site-nav__item {
 	  &:not(:last-child) {
 		 margin-right: 50px;
 	  }
 	}
-	.site-nav__link,
-	.site-nav__link--current {
+.site-nav__link,
+.site-nav__link--current {
+	@media screen and (min-width: 1200px){
 	  font-weight: 500;
 	  font-size: 14px;
 	  line-height: 1,14;
@@ -52,15 +88,28 @@
 	  &:focus {
 		 color: $accent-color;
 	  }
-		&::after {
-			content: '';
-			display: block;
-			left: 0;
-			bottom: -34px;
-			height: 4px;
-			width: 100%;
-			background-color: $accent-color;
-			border-radius: 4px;
-			position: relative;
-		}
+	}
+	  .site-nav__link--current::after {
+	  @media screen and (min-width: 1200px) {
+		content: '';
+		display: block;
+		left: 0;
+		bottom: -34px;
+		height: 4px;
+		width: 100%;
+		background-color: $accent-color;
+		-webkit-border-radius: 4px;
+				  border-radius: 4px;
+		position: relative;
+	 }
+	}
+	.site-nav__link {
+		@media screen and (max-width: 767px){
+		font-family: Roboto;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 1.17;
+		letter-spacing: 0.02em;
+		color:  $primary-text-color;
+	 }
 	}

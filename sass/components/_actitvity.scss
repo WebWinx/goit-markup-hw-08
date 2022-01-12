@@ -39,22 +39,18 @@
 	color: $text-color-on-dark;
 }
 @media screen and (max-width: 767px) {
-	.activity__list {
+	.activity--none {
 	  display: none;
 	}
 }
 @media screen and (min-width: 768px) {
-  .our-work {
+  .activity--none {
 	 display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .activity-list {
 	 display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .activity--none {
 	 padding-bottom: 94px;
   }
 }
