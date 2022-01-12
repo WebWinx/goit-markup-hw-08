@@ -50,12 +50,6 @@
 	margin-bottom: 30px;
  }
 }
-site-nav__link--current {
-	@media screen and (max-width: 767px){
-		color: $accent-color;
-	}
-
-}
 .site-nav {
 @media screen and (min-width: 1200px) { 
 	  display: flex;
@@ -113,3 +107,9 @@ site-nav__link--current {
 		color:  $primary-text-color;
 	 }
 	}
+	.site-nav__link--current:hover,
+.site-nav__link--current:focus{
+	@media screen and (max-width: 767px){
+		color: $accent-color;
+	}
+}

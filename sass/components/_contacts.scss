@@ -1,15 +1,14 @@
 .contacts {
-	margin-left: auto;
 
 	@media screen and (max-width: 767px) {
-		margin-top: 302px;
-		margin-bottom: 64px;
+		margin-top: auto;
 		flex-direction: column;
-		
+		margin-bottom: 64px;
 	  }
 	  @media screen and (mix-width: 1200px) {
 	  align-items:center;
 	  display: flex;
+	  margin-left: auto;
 	}
 }
 .contacts__link:not(:last-child) {
@@ -28,15 +27,22 @@
 	&:focus {
 	color: $accent-color;
 }
-}.contacts__item-tel {
-	@media screen and (max-width: 767px){
-	margin-bottom: 32px;
-}
 }
 .contacts__item-tel {
 	@media screen and (max-width: 767px){
 	font-family: Roboto;
 	font-size: 34px;
+	font-weight: 500;
+	line-height: 1.17;
+	letter-spacing: 0.02em;
+	color: $accent-color;
+}
+}
+.contacts__item-tel {
+	@media screen and (max-width: 480px){
+	margin-bottom: 32px;
+	font-family: Roboto;
+	font-size: 24px;
 	font-weight: 500;
 	line-height: 1.17;
 	letter-spacing: 0.02em;
