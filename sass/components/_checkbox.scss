@@ -27,15 +27,15 @@
 	height: 15px;
 	border: 2px solid $primary-text-color;
 	border-radius: 2px;
-	cursor: pointer;
-	.checkbox:checked + & {
+	cursor: pointer;}
+
+	.checkbox__input:checked + .checkbox__icon  {
 		background-origin: border-box;
 		background-color: $accent-color;
 		background-image: url(./images/icons.svg#icon-tick);
 		background-size: contain;
-		border-color: $accent-color;
+		border-color: $accent-color;;
 	}
-}
 
 .checkbox__link {
 	text-decoration-line: underline;
