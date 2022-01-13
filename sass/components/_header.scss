@@ -9,14 +9,12 @@
 	 display: flex;
 	 justify-content: space-between;
 	 align-items: center;
+	 margin: 0 15px;
 	}
 	@media screen and (min-width: 768px) {
 	  display: flex;
 	  align-items: center;
-	}
-	@media screen and (min-width: 1200px) {
-	  display: flex;
-	  align-items: center;
+	  padding: 0;
 	}
  }
 .header__navigation {
@@ -24,7 +22,7 @@
 		display: none;
 		margin-left: 0;
 	  }
-	  @media screen and (min-width: 780px) {
+	  @media screen and (min-width: 768px) {
 		align-items: center;
 		margin-right: 84px;
 	 }
@@ -38,6 +36,10 @@
 	@media screen and (max-width: 767px) {
 		display: none;
 	  }
+	  @media screen and (min-width: 768px) {
+      margin: 0;
+
+	  } 
 	  @media screen and (min-width: 1200px) {
 		margin-left: auto;
 		display: flex;

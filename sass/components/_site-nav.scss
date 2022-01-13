@@ -2,16 +2,14 @@
 	@media screen and (max-width: 767px) {
    flex-direction: column;
 	 }
-	 @media screen and (min-width: 780px) {
+	 @media screen and (min-width: 768px) {
+margin-left: 88px;
+	  }
+	 @media screen and (min-width: 768px) {
 		display: flex;
 		align-items: center;
 		padding: 0;
 	  }
-	 @media screen and (min-width: 1200px) {
-	 display: flex;
-	 align-items: center;
-	 padding: 0;
-	}
 }
 .site-nav__item {
 	&:not(:last-child) {
@@ -27,8 +25,8 @@
 	line-height: 1.17;
 	letter-spacing: 0.02em;
    transition: color $animation-duration $animation-timing-function;}
-}
-	@media screen and (max-width: 767px){
+	}
+@media screen and (max-width: 767px){
 		.site-nav__link:not(:last-child) {
 	margin-bottom: 30px;
  }
@@ -41,7 +39,7 @@ fill: $accent-color;
 	}
 }
 .site-nav__link {
-	@media screen and (min-width: 1200px){
+	@media screen and (min-width: 768px){
 	display: block;
 	color: $title-text-color;
 	font-family: inherit;
@@ -61,7 +59,7 @@ fill: $accent-color;
 }
 .site-nav__link,
 .site-nav__link--current {
-	@media screen and (min-width: 1200px){
+	@media screen and (min-width: 768px){
 	  font-weight: 500;
 	  line-height: 1.14;
 	  letter-spacing: 0.02em;
@@ -78,7 +76,7 @@ fill: $accent-color;
 	  }
 	}
 	  .site-nav__link--current::after {
-	  @media screen and (min-width: 1200px) {
+	  @media screen and (min-width: 768px) {
 		content: '';
 		display: block;
 		left: 0;
