@@ -24,6 +24,11 @@
 		display: none;
 		margin-left: 0;
 	  }
+	  @media screen and (min-width: 780px) {
+		align-items: center;
+		margin-right: 84px;
+	 }
+
 	  @media screen and (min-width: 1200px) {
 		align-items: center;
 		margin-left: 93px;
@@ -33,4 +38,8 @@
 	@media screen and (max-width: 767px) {
 		display: none;
 	  }
+	  @media screen and (min-width: 1200px) {
+		margin-left: auto;
+		display: flex;
+	  } 
 }

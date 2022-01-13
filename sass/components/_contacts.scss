@@ -1,19 +1,21 @@
 .contacts {
-
 	@media screen and (max-width: 767px) {
 		margin-top: auto;
-		flex-direction: column;
 		margin-bottom: 64px;
+		flex-direction: column;
 	  }
 	  @media screen and (mix-width: 1200px) {
-	  align-items:center;
 	  display: flex;
-	  margin-left: auto;
 	}
 }
-.contacts__link:not(:last-child) {
+	.contacts__item:not(:last-child){
 	margin-right: 50px;
-}
+		}
+	.contacts__item {
+			@media screen and (min-width: 768px){
+				flex-direction: row;
+			}
+		}
 
 .contacts__link {
 	color: $color-text-description;
@@ -28,34 +30,25 @@
 	color: $accent-color;
 }
 }
-.contacts__item-tel {
+.contacts__link--medium-size {
+	font-size: 24px;
+	color: $social-link-color;}
+.contacts__link--big-size {
 	@media screen and (max-width: 767px){
-	font-family: Roboto;
 	font-size: 34px;
-	font-weight: 500;
-	line-height: 1.17;
-	letter-spacing: 0.02em;
-	color: $accent-color;
-}
-}
-.contacts__item-tel {
-	@media screen and (max-width: 480px){
 	margin-bottom: 32px;
-	font-family: Roboto;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 1.17;
-	letter-spacing: 0.02em;
+}
+}
+.contacts__link--big-size {
+	@media screen and (max-width: 480px){
+	font-size: 27px;
+	margin-bottom: 32px;
+}
+}
+.contacts__link--accent-color {
+	@media screen and (max-width: 767px){
 	color: $accent-color;
 }
-}
-.contacts__item-email {
-	font-family: Roboto;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 1.17;
-	letter-spacing: 0.02em;
-	color: $social-link-color;
 }
 .contacts__icon {
 	margin-right: 10px;
@@ -66,4 +59,3 @@
 	fill: $accent-color;
   }
 }
-

@@ -1,44 +1,22 @@
 .filter-list {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 50px;
 	@media screen and (max-width: 767px) {
 		justify-content: flex-start;
 		flex-wrap: wrap;
-		margin-bottom: 40px;
+		margin: -8px -4px -32px;
 	 }
 	 @media screen and (min-width: 768px) {
 		justify-content: center;
-		margin-bottom: 30px;
+		margin: -8px -4px -22px;
 	 }
 	 @media screen and (min-width: 1200px) {
 		justify-content: center;
 		margin-bottom: 50px;
+		margin: -8px -4px -42px;
 	 }
 }
-@media screen and (max-width: 767px) {
-	.filter-list__item:nth-child(-n + 4) {
-	  margin-bottom: 15px;
+	.filter-list__item {
+   margin: 8px 4px;
 	}
-	.filter-list__item:nth-last-child(-n + 2) {
-	  margin-bottom: 0;
-	}
-	.filter-list__item:not(:last-child) {
-	  margin-right: 8px;
-	}
- }
- @media screen and (min-width: 768px) {
-	.filter-list__item:not(:last-child) {
-	  margin-right: 8px;
-	}
- }
- @media screen and (min-width: 1200px) {
-	.filter-list__item:not(:last-child) {
-	  margin-right: 8px;
-	}
- }
-.filter-list__item:not(:last-child) {
-	margin-right: 8px;
-}
-
-
+ 

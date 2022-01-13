@@ -28,27 +28,30 @@
 	.features-list {
 	  display: flex;
 	  flex-wrap: wrap;
+	  margin: -15px;
 	}
-	 .features-list__image {
-		width: 354px;
-	 }
-	 .features-list__description {
-		width: 354px;
-	 }
+	.features-list__item {
+		margin: 15px;
+		width: calc((100% - 60px) / 2);
+		}
   }
+  .features-list{
+	@media screen and (min-width: 780px){
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+  }
+}
 @media screen and (min-width: 1200px) {
 	.features-list {
 	  display: flex;
-	}
-	.features-list__item {
-	  &:not(:last-child) {
-		 margin-right: 30px;
-	  }
-	}
-	.features-list__image {
-	  width: 270px;
-	}
-	.features-list__description {
-	  width: 270px;
+	  margin: -15px;
 	}
  }
+ @media screen and (min-width: 1200px) {
+	.features-list__item {
+		margin: 15px;
+width: calc((100% - 120px) / 4);
+}
+	} 
+ 
