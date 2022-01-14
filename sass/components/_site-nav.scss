@@ -3,9 +3,6 @@
 		flex-direction: column;
 		 }
 		 @media screen and (min-width: 768px) {
-		  margin-left: 88px;
-		  }
-		 @media screen and (min-width: 768px) {
 			display: flex;
 			align-items: center;
 			padding: 0;
@@ -19,7 +16,6 @@
 	font-size: 14px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	padding: 32px 0;
    transition: color $animation-duration $animation-timing-function;
 	&:hover,
 	&:focus {
@@ -32,9 +28,15 @@
 }
 @media screen and (max-width: 767px){	
 	.site-nav__link {	
-		font-size: 40px;		
+		font-size: 40px;
+		margin-bottom: 32px;		
       }
     }
+@media screen and (min-width: 768px){	
+		.site-nav__link {	
+			padding: 32px 0;		
+			}
+		 }
 @media screen and (max-width: 767px){
 .site-nav__link:hover,
 .site-nav__link:focus {
@@ -42,15 +44,17 @@
 	font-size: 40px;
    }
 }
+@media screen and (min-width: 768px) {
 .site-nav__item:not(:last-child) {
 	margin-right: 50px;
+}
 }
 @media screen and (max-width: 1199px){	
 	.site-nav__link--current {	
     color: $accent-color;
 }
 }
-	@media screen and (min-width: 1200px){	
+	@media screen and (min-width: 768px){	
 		.site-nav__link--current {	
 	color: $accent-color;
 	&::after {

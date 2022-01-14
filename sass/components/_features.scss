@@ -1,5 +1,12 @@
-.features {
-	padding-bottom: 0;
+@media screen and (max-width: 1199px) {
+	.features {
+padding-bottom: 60px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.features {
+padding-bottom: 0px;
+	}
 }
 .features-list__title {
 	margin-bottom: 10px;

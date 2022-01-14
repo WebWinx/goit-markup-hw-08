@@ -13,7 +13,7 @@
 	@media screen and (min-width: 768px) {
 		display: flex;
 		align-items: center;
-		padding: 0;
+		padding: 10px;
 	 }
  }
 .header__navigation {
@@ -24,6 +24,7 @@
 	  @media screen and (min-width: 768px) {
 		align-items: center;
 		margin-right: 84px;
+			margin-left: 88px;
 	 }
 
 	  @media screen and (min-width: 1200px) {
@@ -36,7 +37,7 @@
 		display: none;
 	  }
 	  @media screen and (min-width: 768px) {
-      margin: 0;
+      margin-left: auto;
 		align-items: center;
 	  } 
 	  @media screen and (min-width: 1200px) {
